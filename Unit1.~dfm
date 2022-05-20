@@ -1,0 +1,95 @@
+object Form1: TForm1
+  Left = 192
+  Top = 125
+  Width = 928
+  Height = 480
+  Caption = 'NotatnikYT'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object TRESC: TMemo
+    Left = 0
+    Top = 0
+    Width = 912
+    Height = 421
+    Align = alClient
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 864
+    Top = 8
+    object Plik1: TMenuItem
+      Caption = '&Plik'
+      object Nowy1: TMenuItem
+        Caption = '&Nowy'
+      end
+      object N1: TMenuItem
+        Caption = '&Otworz'
+        OnClick = N1Click
+      end
+      object Zapisz1: TMenuItem
+        Caption = '&Zapisz'
+      end
+      object Zapiszjako1: TMenuItem
+        Caption = '&Zapisz jako'
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Zakoncz1: TMenuItem
+        Caption = '&Zakoncz'
+      end
+    end
+    object Edycja1: TMenuItem
+      Caption = '&Edycja'
+      object Wytnij1: TMenuItem
+        Caption = '&Wytnij'
+      end
+      object Kopiuj1: TMenuItem
+        Caption = '&Kopiuj'
+      end
+      object Wklej1: TMenuItem
+        Caption = '&Wklej'
+      end
+    end
+    object Format1: TMenuItem
+      Caption = '&Format'
+      object Zawijaniewierszy1: TMenuItem
+        Caption = '&Zawijanie wierszy'
+      end
+      object CZcionka1: TMenuItem
+        Caption = '&Czcionka'
+      end
+    end
+    object Pomoc2: TMenuItem
+      Caption = '&Pomoc'
+      object Informacje1: TMenuItem
+        Caption = '&Informacje'
+        object Oprogramie1: TMenuItem
+          Caption = '&O programie'
+        end
+        object Zapraszamnabloga1: TMenuItem
+          Caption = '&Zapraszam na bloga'
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Pliki tekstowe|*.txt|Wszystkie Pliki|*.*'
+    Left = 788
+    Top = 48
+  end
+end

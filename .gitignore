@@ -1,0 +1,33 @@
+
+# Prerequisites
+*.d
+*.dfm
+*.obj
+*.tds
+
+*.slo
+*.lo
+*.o
+*.obj
+
+*.gch
+*.pch
+
+*.so
+*.dylib
+*.dll
+
+
+*.mod
+*.smod
+
+
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
